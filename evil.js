@@ -227,4 +227,7 @@
       return getClass.call(value);
     }
   };
+
+  // screw up a lot of things, including the 'in' operator
+  Object.prototype.troll = 'trololololololol';
 }).call(this);
